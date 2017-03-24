@@ -1,0 +1,316 @@
+body {
+	font: 400 1.6em Lato, sans-serif;
+	line-height: 1.8;
+	color: #434343;
+	background-color: #fff;
+	margin: 0px !important;
+overflow: hidden;
+}
+
+
+#s1pisland
+{
+overflow: hidden !important;
+}
+#svg8
+{
+overflow: hidden !important;
+}
+
+.cell.active {
+	stroke: #e22 !important;
+	stroke-width: 0.8px !important
+}.dcell.active {
+	stroke: #e22 !important;
+	stroke-width: 0.8px !important
+}
+/*.cell {
+	stroke: none !important;
+	stroke-width: 0.51px !important
+}
+.dcell {
+	stroke: none !important;
+	stroke-width: 1px !important;
+}*/
+.cell {
+	stroke: #000 !important;
+	stroke-width: 0.1px !important
+}
+.dcell {
+	stroke: #000 !important;
+	stroke-width: 0.1px !important;
+}
+#s1p-island {
+	padding: 0;
+	margin: 0;
+	background-color: #fff;
+	z-index: 100;
+}
+
+
+#s1p-island-load-screen {
+
+	
+
+	
+	position: fixed;
+	left: 0px;
+	right: 0px;
+	width: 100%;
+	height: 100%;
+	padding: auto;
+	margin: 0;
+	background-color: #4477ffaa;
+
+
+   vertical-align: middle;
+	
+	z-index: 1001;
+}
+#s1p-island-load-screen h3 {
+color: #fff;
+	font: 300 10vh Lato, sans-serif !important;
+		text-align: center !important; 
+		  vertical-align: middle !important;
+		  margin-top: 40vh;
+		  
+}
+#toggleshub
+{
+width: 100%;
+
+
+	color: #eeed;
+	font-size: 1em;
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	z-index: 1000;
+	text-align: center;
+}
+#promohub
+{
+/*display: none;*/
+width: 100%;
+	color: #444;
+	background-color: #fff !important;
+
+	font: 200 5vh Lato, sans-serif !important;
+
+	position: fixed;
+	top: 55vh;
+	left: 0px;
+	z-index: 1100;
+	text-align: center;
+	padding: 0.3em;
+}
+#promohub a
+{
+	text-decoration: none;
+	color: #444;
+}
+#promohub.jslink-a
+{
+	text-decoration: none;
+	color: #444 !important;
+}
+#csl
+{
+	text-align: left !important;
+
+}
+.jslink-a
+{
+color: #444;
+cursor: pointer;
+}
+.jslink-a:hover
+{
+color: #fff;
+cursor: pointer;
+}
+.hidestrate {
+	display: none
+}
+.hide-indicator {
+	display: none
+}
+.forest {
+	fill: #0a0 !important
+}
+.rock {
+	fill: #aaa !important
+}
+.plain {
+	fill: #5f5 !important
+}
+
+}
+.desert {
+	fill: #fc0 !important
+}
+.cell-strate-1.forest {
+	fill: #a56000 !important;
+	stroke: #333;
+	stroke-width: 4px
+}
+.cell-strate-2.forest {
+	fill: #a56000 !important
+}
+.cell-strate-3.forest {
+	fill: #cd8d2a !important
+}
+.cell-strate-4.forest {
+	fill: #deac5f !important
+}
+.cell-strate-5.forest {
+	fill: #eac999 !important
+}
+.cell-strate-6.forest {
+	fill: #eac999 !important
+}
+.cell-strate-7.forest {
+	fill: #eac999 !important
+}
+.cell-strate-8.forest {
+	fill: #eac999 !important
+}
+.cell-strate-9.forest {
+	fill: #eac999 !important
+}
+.cell-strate-1.rock {
+	fill: #222 !important;
+}
+.stem-cell.rock {
+	fill: #222 !important;
+}
+.cell-strate-2.rock {
+
+	fill: #777 !important
+}
+.cell-strate-3.rock {
+
+	fill: #999 !important
+}
+.cell-strate-4.rock {
+
+	fill: #aaa !important
+}
+.cell-strate-5.rock {
+
+	fill: #999 !important
+}
+.cell-strate-6.rock {
+
+	fill: #999 !important
+}
+.cell-strate-7.rock {
+
+	fill: #ccc !important
+}
+.cell-strate-8.rock {
+
+	fill: #aaa !important
+}
+.cell-strate-9.rock {
+
+	fill: #fff !important
+}
+.cell-strate-10.rock {
+
+	fill: #fff !important
+}
+.cell-strate-11.rock {
+
+	fill: #fff !important
+}
+.cell-strate-12.rock {
+
+	fill: #fff !important
+}
+.cell-strate-13.rock {
+
+	fill: #fff !important
+}
+.rock {
+	stroke: none !important;
+
+}
+.cell-strate-1.plain {
+	fill: #1f1 !important
+}
+.cell-strate-2.plain {
+	fill: #2f2 !important
+}
+.cell-strate-3.plain {
+	fill: #5f5 !important
+}
+.cell-strate-4.plain {
+	fill: #7f7 !important
+}
+.cell-strate-5.plain {
+	fill: #9f9 !important
+}
+.cell-strate-6.plain {
+	fill: #9f9 !important
+}
+.cell-strate-7.plain {
+	fill: #9f9 !important
+}
+.cell-strate-8.plain {
+	fill: #9f9 !important
+}
+.cell-strate-9.plain {
+	fill: #9f9 !important
+}
+.cell-strate-1.desert { fill: #fda !important; stroke: #000 !important; stroke-width: 1px !important}
+.cell-strate-2.desert { fill: #fc3 !important }
+.cell-strate-3.desert { fill: #fd6 !important }
+.cell-strate-4.desert {	fill: #fe9 !important }
+/*.cell-strate-1.desert {
+	fill: #fda !important;
+	stroke: #fda !important;
+	stroke-width: 1px !important
+}
+.cell-strate-2.desert {
+	fill: #fc3 !important;
+	stroke: #fc3 !important;
+	stroke-width: 1px !important
+
+}
+.cell-strate-3.desert {
+	fill: #fd6 !important;
+	stroke: #fd6 !important;
+	stroke-width: 1px !important
+}
+.cell-strate-4.desert {
+	fill: #fe9 !important;
+	stroke: #fe6 !important;
+	stroke-width:1px !important
+}*/
+.cell-strate-5.desert {
+	fill: #fca !important
+}
+.cell-strate-6.desert {
+	fill: #fca !important
+}
+.cell-strate-7.desert {
+	fill: #fcc !important
+}
+.cell-strate-8.desert {
+	fill: #fca !important
+}
+.cell-strate-9.desert {
+	fill: #fca !important
+}
+.player-color.player-1
+{
+	fill: #e00 !important;
+}
+.player-color.player-2
+{
+	fill: #00e !important;
+}
+
+
+
