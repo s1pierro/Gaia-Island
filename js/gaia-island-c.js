@@ -42,76 +42,42 @@ $(window).on("load", function() {
 
 	$('#layer-sea').removeClass('hidestrate');
 
+	var singleTap = new Hammer.Tap({ event: 'singletap' });
+	var doubleTap = new Hammer.Tap({event: 'doubletap', taps: 2 });
+	var tripleTap = new Hammer.Tap({event: 'tripletap', taps: 3 });
+
+	tripleTap.recognizeWith([doubleTap, singleTap]);
+	doubleTap.recognizeWith(singleTap);
+	doubleTap.requireFailure(tripleTap);
+	singleTap.requireFailure([tripleTap, doubleTap]);
+	//pinch.recognizeWith(rotate);
+
+	var myElement = document.getElementById('svg8');
+	var mc = new Hammer(myElement);
+	mc.get('pan').set({ direction: Hammer.DIRECTION_ALL });
+	mc.on("doubletap", function(ev) {
+		//
+	});           		    
+	mc.on("pan", function(ev) { movemap ( ev.velocityX*2, ev.velocityY*4, 3); });
+	mc.on("press", function(ev) {
+		//
+	});
+
+	var element = document.getElementById('svg8');
+	var mcr = new Hammer.Manager(element);
+	var pinch = new Hammer.Pinch();
+	var rotate = new Hammer.Rotate();
+
+	pinch.recognizeWith(rotate);
+	mcr.add([pinch, rotate]);
+	mcr.on("pinch rotate", function(ev) {
 
 
-var singleTap = new Hammer.Tap({ event: 'singletap' });
-var doubleTap = new Hammer.Tap({event: 'doubletap', taps: 2 });
-var tripleTap = new Hammer.Tap({event: 'tripletap', taps: 3 });
-//var pinch = new Hammer.Pinch();
-//var rotate = new Hammer.Rotate();
-
-tripleTap.recognizeWith([doubleTap, singleTap]);
-doubleTap.recognizeWith(singleTap);
-
-doubleTap.requireFailure(tripleTap);
-singleTap.requireFailure([tripleTap, doubleTap]);
-//pinch.recognizeWith(rotate);
-
-var myElement = document.getElementById('svg8');
-
-// create a simple instance
-// by default, it only adds horizontal recognizers
-var mc = new Hammer(myElement);
-//mc.add([pinch, rotate]);
-//mc.get('pinch').set({ enable: true });
-//mc.get('rotate').set({ enable: true });
-
-// let the pan gesture support all directions.
-// this will block the vertical scrolling on a touch-device while on the element
-mc.get('pan').set({ direction: Hammer.DIRECTION_ALL });
-
-// listen to events...mc.on("pan singletap doubletap tripletap press", function(ev) {
-
-mc.on("doubletap", function(ev) {
-	//
-});           		    
-       
-mc.on("pan", function(ev) { movemap ( ev.velocityX*2, ev.velocityY*4, 3); });
-           		    
-           		    
-mc.on("press", function(ev) {
-	//
-});
+			$('#csl').text(ev.type);
+		   rotatemap ( ev.rotation*0.3 );
 
 
-
-var element = document.getElementById('svg8');
-
-var mcr = new Hammer.Manager(element);
-
-// create a pinch and rotate recognizer
-// these require 2 pointers
-var pinch = new Hammer.Pinch();
-var rotate = new Hammer.Rotate();
-
-// we want to detect both the same time
-pinch.recognizeWith(rotate);
-
-// add to the Manager
-mcr.add([pinch, rotate]);
-
-
-mcr.on("pinch rotate", function(ev) {
-
-
-		$('#csl').text(ev.type);
-      rotatemap ( ev.rotation*0.3 );
-
-
-});
-
-///////////////////////////////////////:
-
+	});
 
 	$('body').on('click', '.cell, .dcell', function() {
 
