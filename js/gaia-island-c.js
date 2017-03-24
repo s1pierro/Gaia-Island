@@ -23,6 +23,7 @@ $(window).on("load", function() {
 	refreshtransformlayers();
 	console.log('transform layers ok');
 	$('#s1p-island-load-screen').remove();
+	
 	var spin = null;
 	jumbofreeze = true;
 	var inc = 0.033;
