@@ -14,6 +14,7 @@ function autorotate() {
 	refreshtransformlayers();
 }
 $(window).on("load", function() {
+
 	console.log('document loaded');
 	raztransformlayers();
 	refreshUIlayers();

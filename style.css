@@ -1,0 +1,147 @@
+
+body {
+	font: 400 1.6em Lato, sans-serif;
+	line-height: 1.8;
+	color: #434343;
+	background-color: #fff;
+	margin: 0px !important;
+overflow: hidden;
+}
+#UI
+{
+
+width: 100%;
+	color: #444;
+	background-color: #ddd !important;
+
+	font: 200 5vh Lato, sans-serif !important;
+
+	position: fixed;
+	top: 55vh;
+	left: 0px;
+	z-index: 1100;
+	text-align: center;
+	padding: 0.3em;
+
+}
+#paperseed
+{
+overflow: hidden !important;
+}
+.face
+{
+	fill: #888 !important;
+	stroke: #000 !important;
+	stroke-width: .1px !important;
+}
+.materialwhitestep0
+{
+	fill: #888 !important;
+}
+.materialwhitestep1
+{
+	fill: #888 !important;
+}
+.materialwhitestep2
+{
+	fill: #888 !important;
+}
+.materialwhitestep3
+{
+	fill: #888 !important;
+}
+.materialwhitestep4
+{
+	fill: #888 !important;
+}
+.materialwhitestep5
+{
+	fill: #888 !important;
+}
+.materialwhitestep6
+{
+	fill: #888 !important;
+}
+.materialwhitestep7
+{
+	fill: #888 !important;
+}
+.materialwhitestep8
+{
+	fill: #888 !important;
+}
+.materialwhitestep9
+{
+	fill: #888 !important;
+}
+.materialwhitestep10
+{
+	fill: #888 !important;
+}
+.materialwhitestep11
+{
+	fill: #888 !important;
+}
+.materialwhitestep12
+{
+	fill: #888 !important;
+}
+.materialwhitestep13
+{
+	fill: #888 !important;
+}
+.materialwhitestep14
+{
+	fill: #999 !important;
+}
+.materialwhitestep15
+{
+	fill: #aaa !important;
+}
+.materialwhitestep16
+{
+	fill: #b8b8b8 !important;
+}
+.materialwhitestep17
+{
+	fill: #bfbfbf !important;
+}
+.materialwhitestep18
+{
+	fill: #c8c8c8 !important;
+}
+.materialwhitestep19
+{
+	fill: #cfcfcf !important;
+}
+.materialwhitestep20
+{
+	fill: #d8d8d8 !important;
+}
+.materialwhitestep21
+{
+	fill: #dfdfdf !important;
+}
+.materialwhitestep22
+{
+	fill: #e8e8e8 !important;
+}
+.materialwhitestep23
+{
+	fill: #efefef !important;
+}
+.materialwhitestep24
+{
+	fill: #f8f8f8 !important;
+}
+.materialwhitestep25
+{
+	fill: rgb(255, 255, 255) !important;
+}
+.active {
+
+	fill: #0f0 !important;
+	opacity: 1.0 !important;
+}
+
+
